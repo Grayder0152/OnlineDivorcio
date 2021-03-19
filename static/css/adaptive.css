@@ -1,0 +1,157 @@
+@media screen and (max-width: 1128px) { 
+	header{
+		justify-content: normal;
+		padding: 20px 50px;
+	}
+	header .header_right{
+		display: none;
+	}
+	header .mobile_version_menu{
+		display: block;
+		margin-right: 20px;
+	}
+	header .mob_but{
+		display: block!important;
+		width: 90px;
+		height: 30px;
+		font-weight: bold;
+		font-size: 10px;
+		line-height: 13px;
+		letter-spacing: 0.519481px;
+		color: #FFFFFF;
+		background: linear-gradient(179.04deg, #CC2229 -29.81%, #9F041B 129.89%);
+		border-radius: 5px;
+		position: absolute;
+    	right: 50px;
+	}
+	article .block_1{
+		display: flex;
+    	flex-flow: column;
+    	align-items: center;
+    	background-repeat: no-repeat;
+    	background-position: right -65px;
+		background-image: url('../images/Mask_mini.png')
+	}
+	article .block_1 .big_title{
+		text-align: center;
+		font-size: 24px;
+		line-height: 32px;
+	}
+	article .block_1 img{
+		display: none;
+	}
+	article .block_1 .block_form{
+		flex-flow: column;
+		align-items: center;
+		padding-bottom: 30px;
+	}
+	article .block_1 .block_form .block_form_price{
+		width:100%;
+	    top: -30px;
+    	right: 0;
+	}
+	article .block_1 .block_form .block_form_price .left_block span{
+		font-size: 13px;
+		line-height: 15px;
+	}
+	article .block_1 .block_form .block_form_title{
+		position: static;
+		background: transparent;
+	}
+	article .block_1 .block_form p {
+		max-width: 400px;
+	}
+	article .block_1 .block_form .question{
+		margin-bottom: 20px;
+	}
+	article .block_1 .block_form form div:first-child{
+		display: none;
+	}
+	article .block_1 .block_form form div.mob_form{
+		display: flex;
+	}
+	article .block_1 .block_form form button{
+		width: 312px;
+	}
+	article .block_5 {
+    	margin: 0 50px;
+	}
+	article .block_5 h1{
+		text-align: center;
+	}
+	article .block_5 .conteiner {
+	    flex-flow: column;
+	    align-items: center;
+	}
+	article .block_6{
+		padding: 50px 50px 36px;
+	}
+	article .block_6 .advantages{
+		display: flex;
+		justify-content: space-around;
+		flex-flow: wrap;
+	}
+
+	article .block_7 .but,
+	article .block_7 .slider_reviews .review:first-child,
+	article .block_7 h2{
+		display: none;
+	}
+	article .block_7 .slider_reviews{
+		justify-content: center;
+	}
+	article .block_7 .reviews{
+		flex-flow: column;
+	}
+	article .block_7 .reviews .dots{
+		display: flex;
+	}
+	article .block_7 .reviews .dots span{
+		text-align: center;
+	}
+	footer .header .header_right{
+		display: none;
+	}
+	footer .header{
+		border-bottom: : 1px solid #D8D8D8;
+	}
+
+
+}
+@media screen and (max-width: 720px){
+	article .block_1 .block_form .right_block {
+    	padding-right: 5px;
+	}
+	article .block_3{
+		margin: 0;
+	}
+	article .block_3 img{
+		display: none
+	}
+	article .block_3 img.mob_img{
+		display: block;
+		position: static;
+		margin: -100px 0;
+	}
+	article .block_3 img.mob_img_bg{
+		display: block;
+		top: 30px;
+		left: 0;
+		z-index: -1;
+	}
+	article .block_2 ul{
+		flex-flow: column;
+	}
+	article .block_2 ul li:nth-child(even){
+		transform: rotate(90deg);
+		margin: 20px 0;
+	}
+	article .block_4 .company{
+		flex-flow: column;
+	}
+	article .block_4 .company img{
+		margin-bottom: 20px;
+	}
+
+
+}
