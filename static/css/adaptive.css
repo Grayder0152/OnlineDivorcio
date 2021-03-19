@@ -1,50 +1,4 @@
-header .burger_menu{
-	display: none;
-	width: 20px;
-	height: 15px;
-	justify-content: center;
-	align-items: center;
-	border-radius: 50%;
-	cursor: pointer;
-	position: relative;
-	z-index: 110;
-}
-header .burger_menu span{
-	width: 100%;
-	height: 3px;
-	display: block;
-	border-radius: 3px;
-	margin-top: 6px;
-	background: linear-gradient(180deg, #9095A4 0%, #575C6B 100%);
-	position: relative;
-	cursor: pointer;
-}
-header .burger_menu span::before,
-header .burger_menu span::after{
-	content: '';
-	width: 100%;
-	height: 3px;
-	border-radius: 3px;
-	background: linear-gradient(180deg, #9095A4 0%, #575C6B 100%);
-	position: absolute;
-	left: 0;
-	transition: 1s;
-}
-header .burger_menu span::after{
-	top: -6px;
-}
-header .burger_menu span::before{
-	top: 6px;
-}
-header .overlay .closebtn{
-	display: none;
-	position: absolute;
-    top: 45px;
-    right: 45px;
-    font-size: 60px;
-    color: #fff;
-}
-@media screen and (max-width: 1128px) { 
+@media screen and (max-width: 1200px) { 
 	header{
 		padding:30px 50px;
 	}
@@ -75,7 +29,7 @@ header .overlay .closebtn{
 		justify-content: center; 
 	}
 	header .overlay .menu a{
-		font-size: 15px!important;
+		font-size: 18px!important;
 		color: #fff!important;
 	}
 	header .overlay .closebtn{
@@ -126,7 +80,7 @@ header .overlay .closebtn{
     	right: 0;
 	}
 	article .block_1 .block_form .block_form_price .left_block span{
-		font-size: 13px;
+		font-size: 12px;
 		line-height: 15px;
 	}
 	article .block_1 .block_form .block_form_title{
@@ -194,14 +148,35 @@ header .overlay .closebtn{
 
 }
 @media screen and (max-width: 720px){
+	header {
+    	padding: 30px 20px;
+	}
+	header .logo {
+	    left: 65px;
+	}
+	article .block_1 .block_form .left_block {
+    	width: 430px;
+	}
+	article .block_1 ul li {
+	    margin-left: 50px;
+	}
 	article .block_1 .block_form .right_block {
-    	padding-right: 5px;
+    	padding-right: 10px;
+	}
+	article .block_1 .block_form .right_block .price{
+		font-size: 30px!important;
+	}
+	article .block_1 .block_form .right_block .under_text{
+		font-size: 12px!important;
 	}
 	article .block_3{
 		margin: 0;
 	}
 	article .block_3 img{
 		display: none
+	}
+	article .block_3 .content{
+		padding-left: 20px;
 	}
 	article .block_3 img.mob_img{
 		display: block;
