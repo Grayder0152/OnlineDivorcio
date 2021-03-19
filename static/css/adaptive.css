@@ -1,14 +1,90 @@
+header .burger_menu{
+	display: none;
+	width: 20px;
+	height: 15px;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	cursor: pointer;
+	position: relative;
+	z-index: 110;
+}
+header .burger_menu span{
+	width: 100%;
+	height: 3px;
+	display: block;
+	border-radius: 3px;
+	margin-top: 6px;
+	background: linear-gradient(180deg, #9095A4 0%, #575C6B 100%);
+	position: relative;
+	cursor: pointer;
+}
+header .burger_menu span::before,
+header .burger_menu span::after{
+	content: '';
+	width: 100%;
+	height: 3px;
+	border-radius: 3px;
+	background: linear-gradient(180deg, #9095A4 0%, #575C6B 100%);
+	position: absolute;
+	left: 0;
+	transition: 1s;
+}
+header .burger_menu span::after{
+	top: -6px;
+}
+header .burger_menu span::before{
+	top: 6px;
+}
+header .overlay .closebtn{
+	display: none;
+	position: absolute;
+    top: 45px;
+    right: 45px;
+    font-size: 60px;
+    color: #fff;
+}
 @media screen and (max-width: 1128px) { 
 	header{
-		justify-content: normal;
-		padding: 20px 50px;
+		padding:30px 50px;
 	}
-	header .header_right{
-		display: none;
-	}
-	header .mobile_version_menu{
+	header .burger_menu{
 		display: block;
-		margin-right: 20px;
+		z-index: 1;
+	}
+	header .logo{
+		position: absolute;
+    	left: 100px;
+	}
+	header .overlay{
+		height: 100%;
+	    width: 0;
+	    position: fixed;
+	    z-index: 1;
+	    left: 0;
+	    top: 0;
+		justify-content: center;
+	    background-color: rgb(0,0,0);
+	    background-color: rgba(0,0,0, 0.9);
+	    overflow-x: hidden;
+	    transition: 0.5s;
+	}
+	header .overlay .menu{
+		flex-direction: column;
+		align-items: center;
+		justify-content: center; 
+	}
+	header .overlay .menu a{
+		font-size: 15px!important;
+		color: #fff!important;
+	}
+	header .overlay .closebtn{
+		display: block;		
+	}
+	header .overlay button,
+	header .overlay .under_a
+	{
+		display: none;
 	}
 	header .mob_but{
 		display: block!important;
@@ -21,8 +97,7 @@
 		color: #FFFFFF;
 		background: linear-gradient(179.04deg, #CC2229 -29.81%, #9F041B 129.89%);
 		border-radius: 5px;
-		position: absolute;
-    	right: 50px;
+		cursor: pointer;
 	}
 	article .block_1{
 		display: flex;

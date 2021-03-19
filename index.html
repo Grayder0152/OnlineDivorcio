@@ -2,6 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="static/css/style.css">
 	<link rel="stylesheet" type="text/css" href="static/css/adaptive.css">
 
@@ -12,24 +13,15 @@
 <body>
 	<div class="wrapper">
 		<header>
-			<div class="mobile_version_menu">
-				<li class="hidden_menu_button">
-					<span></span>
-				</li>
-				<ul class="mob_menu">
-					<li><a href="#">Cómo funciona</a></li>
-					<li><a href="#">¿Por Qué Nosotros?</a></li>
-					<li><a href="#">Comentarios</a></li>
-					<li><a href="#">FAQ</a></li>
-					<li><a href="#">Contáctenos</a></li>
-				</ul>
+			<div class="burger_menu" onclick="openNav('overlay')">
+				<span></span>
 			</div>
-			<div class="logo">
+			<a href="#" class="logo">
 				<img src="static/images/origami-bird.png">
 				<span class="logo_title">OnlineDivorcio</span>
-			</div>
-			<button class="mob_but">Get started</button>
-			<div class="header_right">
+			</a>
+			<div class="overlay " id="overlay">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav('overlay')">&times;</a>
 				<ul class="menu">
 					<li><a href="#">Cómo funciona</a></li>
 					<li><a href="#">¿Por Qué Nosotros?</a></li>
@@ -38,9 +30,9 @@
 					<li><a href="#">Contáctenos</a></li>
 				</ul>
 				<button>Empezar</button>
-				<a href="#" class="under_a ">Iniciar Sesión</a>
+				<a href="#" class="under_a">Iniciar Sesión</a>
 			</div>
-
+			<button class="mob_but">Get started</button>
 		</header>
 		<article>
 			<div class="block_1">
@@ -405,8 +397,8 @@
 			<p>Aviso legal: Divorcio en línea no es un bufete de abogados y su sservicios de la página web y los formularios no sustituyen el asesoramiento de un abogado. Divorcio en línea proporciona acceso a servicios de autoayuda asistidos por computadora en su dirección específica. La página web del Divorcio en línea y las instrucciones escritas brindan información general sobre el proceso de divorcio solamente; No podemos darle ningún consejo específico, opiniones o recomendaciones sobre su selección o relleno de formularios o sus derechos, recursos u opciones legales particulares. OnlineDivorce.com es un sitio web que proporciona acceso a cuestionarios en línea autoguiados. El Divorcio en línea no vende formularios en blanco, y un usuario puede descargarlos en el sitio web de un tribunal. Las comunicaciones entre Usted y Divorcio en línea se rigen por nuestra Política de privacidad, pero no están cubiertas por los privilegios de abogado-cliente o producto de trabajo. Su acceso al sitio web de Divorcio en línea está sujeto y regido por nuestros Términos de uso. Cualquier compra de Divorcio en línea está sujeta y regida por nuestros Términos y condiciones.</p>
 		</footer>
 	</div>
-	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-	<script src="static/js/script.js"></script>
 
+<!-- 	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script> -->
+	<script src="static/js/script.js"></script>
 </body>
 </html>
