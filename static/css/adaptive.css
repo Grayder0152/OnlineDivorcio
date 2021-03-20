@@ -61,13 +61,33 @@
     	background-position: right -65px;
 		background-image: url('../images/Mask_mini.png')
 	}
-	article .block_1 .big_title{
-		text-align: center;
+	article .block_1 h1{
+	    max-width: 100%;
 		font-size: 24px;
 		line-height: 32px;
+    	padding: 0px 182px 0 20px;
+
 	}
 	article .block_1 img{
 		display: none;
+	}
+	article .block_1 .block_form form {
+	    display: grid;
+	    grid-template-columns: 1fr;
+	    grid-template-areas: 
+		    "a"
+		    "c"
+		    "b";
+	}
+	article .block_1 .block_form .form{
+		display: grid;
+	    grid-template-columns: 1fr 1fr;
+	    grid-template-areas:
+		    "inp2 inp4"
+		    "inp3 inp3"
+		    "inp1 inp1"
+		    "btn btn"
+		    "sp sp";
 	}
 	article .block_1 .block_form{
 		flex-flow: column;
@@ -84,33 +104,29 @@
 		line-height: 15px;
 	}
 	article .block_1 .block_form .block_form_title{
+		display: block;
+    	padding: 15px 0 25px;
+    	font-size: 30px;
 		position: static;
 		background: transparent;
 	}
-	article .block_1 .block_form p {
+	article .block_1 .block_form p{
 		max-width: 400px;
 	}
 	article .block_1 .block_form .question{
 		margin-bottom: 20px;
 	}
-	article .block_1 .block_form form div:first-child{
-		display: none;
-	}
-	article .block_1 .block_form form div.mob_form{
-		display: flex;
-	}
 	article .block_1 .block_form form button{
-		width: 312px;
+		/* width: 312px; */
 	}
-	article .block_5 {
+	article .block_5 .conteiner .left_text{
     	margin: 0 50px;
 	}
 	article .block_5 h1{
 		text-align: center;
 	}
 	article .block_5 .conteiner {
-	    flex-flow: column;
-	    align-items: center;
+	    justify-content: center;
 	}
 	article .block_6{
 		padding: 50px 50px 36px;
@@ -138,7 +154,7 @@
 	article .block_7 .reviews .dots span{
 		text-align: center;
 	}
-	footer .header .header_right{
+	footer .header .overlay{
 		display: none;
 	}
 	footer .header{
@@ -202,6 +218,4 @@
 	article .block_4 .company img{
 		margin-bottom: 20px;
 	}
-
-
 }

@@ -169,7 +169,8 @@ article .block_1 img:not(.sort){
 article .block_1 img.mob_img{
 	display: none
 }
-article .block_1 .big_title{
+article .block_1 h1{
+	max-width: 65%;
 	font-weight: bold;
 	font-size: 54px;
 	line-height: 72px;
@@ -192,9 +193,8 @@ article .block_1 .block_form{
 	position: relative;
 	background: linear-gradient(317.76deg, #FFA600 40.02%, #FF7800 68.68%, #FF6D00 83.15%);
 	border-radius: 10px;
-	margin: 107px auto;
+	margin: 100px auto;
 	padding: 38px 40px 0;
-	display: flex;
 }
 article .block_1 .block_form .block_form_title{
 	width: 214px;
@@ -274,9 +274,8 @@ article .block_1 .block_form .question input[type='radio']{
     position: absolute;
     z-index: -1;
     opacity: 0;
-
 }
-article .block_1 .block_form .question label {
+article .block_1 .block_form .question label{
     display: inline-flex;
     align-items: center;
     user-select: none;
@@ -305,18 +304,24 @@ article .block_1 .block_form .question input[type='radio']:checked+label::before
 	background-size: 60%;
 	background-repeat: no-repeat
 }
-article .block_1 .block_form form:not(.question){
-	display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
+article .block_1 .block_form form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+	    "a b"
+	    "c b";
 }
 article .block_1 .block_form form div:first-child{
-	display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
+	grid-area: a
 }
-article .block_1 .block_form form div.mob_form{
+article .block_1 .block_form form div:nth-child(2){
+	grid-area: b	
+}
+article .block_1 .block_form form div:nth-child(3){
+	grid-area: c
+}
+
+/* article .block_1 .block_form form div.mob_form{
     display: none;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -324,23 +329,31 @@ article .block_1 .block_form form div.mob_form{
 }
 article .block_1 .block_form form div.mob_form input{
 	margin-right: 0px!important;
+} */
+article .block_1 .block_form .form{
+	display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 12px;
+    grid-template-areas:
+	    "inp1 inp2"
+	    "inp3 inp4"
+	    "btn btn"
+	    "sp sp";
 }
-article .block_1 .block_form form input{
-	width: 208px;
-	height: 47px;
+article .block_1 .block_form .form input{
+	/* max-width: 208px; */
+	min-height: 47px;
 	background: #FFFFFF;
 	border: 1px solid #FFFFFF;
 	border-radius: 5px;
 	padding-left: 12px;
-	margin-bottom: 15px;
 }
 article .block_1 .block_form form div input:nth-child(odd){
-	width: 253px;
-	margin-right: 12px;
+	/* max-width: 253px; */
 }
-article .block_1 .block_form form button{
-	width: 477px;
-	height: 50px;
+article .block_1 .block_form .form button{
+	/* max-width: 477px; */
+	min-height: 50px;
 	background: #CC2229;
 	box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
 	border-radius: 5px;
@@ -349,14 +362,13 @@ article .block_1 .block_form form button{
 	cursor: pointer;
 	position: relative
 } 
-article .block_1 .block_form form button img{
+article .block_1 .block_form .form button img{
 	position: absolute;
 	right: 40px;
 }
-article .block_1 .block_form form span{
+article .block_1 .block_form .form span{
 	font-size: 11px;
 	color: #fff;
-	margin-top: 6px
 }
 
 
@@ -474,13 +486,13 @@ article .block_4 .company{
 
 
 article .block_5{
-	margin: 10px 140px;
+	margin: 0 auto;
+    max-width: 1100px;
 }
 article .block_5 h1{
 	font-weight: bold;
 	font-size: 36px;
 	line-height: 48px;
-	align-items: center;
 	letter-spacing: 0.545455px;
 	color: #575C6B;
 	margin-bottom: 46px;
@@ -488,6 +500,7 @@ article .block_5 h1{
 article .block_5 .conteiner{
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 	gap: 20px;
 }
 article .block_5 .conteiner .left_text{
@@ -528,8 +541,8 @@ article .block_5 .conteiner .left_text ul li{
 }
 
 article .block_5 .conteiner .right_text .color_block{
-	width: 471px;
-	height: 688px;
+	max-width: 470px;
+	min-height: 688px;
 	background: linear-gradient(180deg, #FFA700 0%, #FF7A00 46.38%, #FF6E00 100%);
 	box-shadow: 0px 2px 11px rgba(0, 0, 0, 0.238338);
 	border-radius: 5px;
@@ -545,21 +558,18 @@ article .block_5 .conteiner .right_text .color_block h3{
 	line-height: 32px;
 	text-align: center;
 	letter-spacing: 0.545455px;
-
 	color: #FFFFFF;
 }
 article .block_5 .conteiner .right_text .color_block span{
 	font-size: 16px;
 	line-height: 21px;
 	letter-spacing: 0.484848px;
-
 	color: #FFFFFF;
 }
 article .block_5 .conteiner .right_text .color_block ul li{
 	font-size: 16px;
 	line-height: 21px;
 	letter-spacing: 0.545455px;
-
 	color: #FFFFFF;
 	list-style-image: url('../images/check-circle.png');
 	padding-left: 10px;
@@ -567,7 +577,8 @@ article .block_5 .conteiner .right_text .color_block ul li{
     margin-bottom: 16px;
 }
 article .block_5 .conteiner .right_text .color_block button{
-	width: 427px;
+	width: 100%;
+	max-width: 427px;
 	height: 50px;
 	background: #CC2229;
 	box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
@@ -775,22 +786,27 @@ article .block_7 h2{
 
 footer{
 	width: 100%;
+	max-width: 1440px;
 	min-height: 506px;
-	padding: 15px 140px;
+	margin: 0 auto;
+	padding: 20px;
 	background: #9095A4;
 	color: #ffff;
+}
+footer .wrapp{
+	max-width: 1160px;
+	margin: 0 auto;
 	display: flex;
     flex-flow: column;
     justify-content: space-around;
 }
-footer a,footer span{
+footer a,
+footer span{
 	color: #fff!important;
 }
 footer p{
 	font-size: 12px;
 	line-height: 144%;
-	margin-right: 20px;
-    min-width: 160px;
 }
 footer .header{
 	padding: 0;
@@ -798,15 +814,17 @@ footer .header{
 }
 footer .contact{
 	display: flex;
-}
-footer .contact p:first-child{
-	margin-right: 25px;
+	flex-wrap: wrap;
+	gap: 25px;
 }
 footer .block_country{
 	display: flex;
 	justify-content: space-between;
 	flex-flow: wrap;
 	margin-bottom: 20px;
+}
+footer .block_country div{
+	min-width: 165px;
 }
 footer hr{
 	width: 100%;
