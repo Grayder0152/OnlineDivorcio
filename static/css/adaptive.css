@@ -142,14 +142,9 @@
     	width: 100%;
 		max-width: 520px!important;
 	}
-
 	footer .header .overlay{
 		display: none;
 	}
-	footer .header{
-		border-bottom: : 1px solid #D8D8D8;
-	}
-
 
 }
 @media screen and (max-width: 720px){
