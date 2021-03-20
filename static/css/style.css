@@ -194,7 +194,7 @@ article .block_1 .block_form{
 	background: linear-gradient(317.76deg, #FFA600 40.02%, #FF7800 68.68%, #FF6D00 83.15%);
 	border-radius: 10px;
 	margin: 100px auto;
-	padding: 38px 40px 0;
+	padding: 35px 40px 30px;
 }
 article .block_1 .block_form .block_form_title{
 	width: 214px;
@@ -320,16 +320,6 @@ article .block_1 .block_form form div:nth-child(2){
 article .block_1 .block_form form div:nth-child(3){
 	grid-area: c
 }
-
-/* article .block_1 .block_form form div.mob_form{
-    display: none;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    max-width: 312px;
-}
-article .block_1 .block_form form div.mob_form input{
-	margin-right: 0px!important;
-} */
 article .block_1 .block_form .form{
 	display: grid;
     grid-template-columns: 1fr 1fr;
@@ -341,18 +331,13 @@ article .block_1 .block_form .form{
 	    "sp sp";
 }
 article .block_1 .block_form .form input{
-	/* max-width: 208px; */
 	min-height: 47px;
 	background: #FFFFFF;
 	border: 1px solid #FFFFFF;
 	border-radius: 5px;
 	padding-left: 12px;
 }
-article .block_1 .block_form form div input:nth-child(odd){
-	/* max-width: 253px; */
-}
 article .block_1 .block_form .form button{
-	/* max-width: 477px; */
 	min-height: 50px;
 	background: #CC2229;
 	box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
@@ -583,16 +568,21 @@ article .block_5 .conteiner .right_text .color_block button{
 	background: #CC2229;
 	box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
 	border-radius: 5px;
-
-	font-weight: bold;
-	font-size: 18px;
-	letter-spacing: 0.606061px;
-	line-height: 24px;
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
 
+}
+article .block_5 .conteiner .right_text .color_block button span{
+	font-weight: bold;
+	font-size: 18px;
+	letter-spacing: 0.606061px;
+	line-height: 24px;
 	color: #FFFFFF;
+
+}
+article .block_5 .conteiner .right_text .color_block button span:nth-child(2){
+	display: none;
 }
 article .block_5 .conteiner .right_text .company{
 	display: flex;
