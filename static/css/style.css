@@ -331,6 +331,7 @@ article .block_1 .block_form .form{
 	    "sp sp";
 }
 article .block_1 .block_form .form input{
+	min-width: 140px;
 	min-height: 47px;
 	background: #FFFFFF;
 	border: 1px solid #FFFFFF;

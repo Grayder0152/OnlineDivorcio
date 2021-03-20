@@ -177,6 +177,10 @@
 	}
 	article .block_1 .block_form .left_block {
     	width: 430px;
+    	padding: 0 10px;
+	}
+	article .block_1 .block_form .block_form_price .left_block span{
+		font-size: 10px;
 	}
 	article .block_1 ul li {
 	    margin-left: 50px;
