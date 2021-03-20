@@ -675,7 +675,9 @@ article .block_7 h1{
 	margin:70px 0 35px;
 }
 article .block_7 .slider_reviews{
-    min-width: 1030px;
+	width: 100%;
+    max-width: 1130px;
+    margin: 0 20px;
 	display: flex;
     justify-content: space-between;
 }
@@ -685,29 +687,32 @@ article .block_7 .reviews .dots{
 	display: none;
 	justify-content: space-between;
 }
-article .block_7 .reviews .dots span{
+article .block_7 .reviews .dots li{
 	width: 10px;
 	height: 10px;
 	border-radius: 50%;
 	background-color: #C4C4C4;
 }
-article .block_7 .reviews .dots span:hover,
-article .block_7 .reviews .dots span.active{
+article .block_7 .reviews .dots li:hover,
+article .block_7 .reviews .dots li.active{
 	background-color: #FF6D00;
 	box-shadow: 0px 0px 10px #FF6D00;
 	cursor: pointer;
 }
 article .block_7 .but{
+    display: flex;
+    align-items: center;
 	cursor: pointer;
 	margin: 0 15px;
 }
 article .block_7 .slider_reviews .review{
-	width: 498px;
-	height: 215px;
+	max-width: 498px;
+	min-height: 215px;
 	position: relative;
-	padding: 25px 25px 0 34px;
+	padding: 25px 25px 40px 34px;
 	background: #D8D8D8;
 	border-radius: 7px;
+	margin: 0 15px;
 }
 article .block_7 .slider_reviews .review .date{
 	font-size: 14px;
@@ -783,6 +788,7 @@ footer{
 	padding: 20px;
 	background: #9095A4;
 	color: #ffff;
+	margin-top: 50px;
 }
 footer .wrapp{
 	max-width: 1160px;

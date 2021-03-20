@@ -138,24 +138,11 @@
 		justify-content: space-around;
 		flex-flow: wrap;
 	}
+	.slick-slider .slick-list{
+    	width: 100%;
+		max-width: 520px!important;
+	}
 
-	article .block_7 .but,
-	article .block_7 .slider_reviews .review:first-child,
-	article .block_7 h2{
-		display: none;
-	}
-	article .block_7 .slider_reviews{
-		justify-content: center;
-	}
-	article .block_7 .reviews{
-		flex-flow: column;
-	}
-	article .block_7 .reviews .dots{
-		display: flex;
-	}
-	article .block_7 .reviews .dots span{
-		text-align: center;
-	}
 	footer .header .overlay{
 		display: none;
 	}
@@ -195,7 +182,7 @@
 		font-size: 12px!important;
 	}
 	article .block_1 .block_form p {
-	    font-size: 35px;
+	    font-size: 30px;
 	}
 	article .block_3{
 		margin: 0;
@@ -229,5 +216,24 @@
 	}
 	article .block_4 .company img{
 		margin-bottom: 20px;
+	}
+	article .block_7 .but,
+	article .block_7 .slider_reviews .review:first-child,
+	article .block_7 h2{
+		display: none!important;
+	}
+	article .block_7 .slider_reviews{
+		flex-flow: column;
+		justify-content: center;
+    	align-items: center;
+	}
+	article .block_7 .slider_reviews .review .date{
+		top: 20px;
+	}
+	.slick-dots li button::before{
+		font-size: 10px!important;
+	}
+	.slick-dots li.slick-active button::before {
+    	color: #FF6D00!important;
 	}
 }
